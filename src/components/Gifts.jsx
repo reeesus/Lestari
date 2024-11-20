@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "./Navbar";
 
 const Gifts = () => {
@@ -66,7 +66,11 @@ const Gifts = () => {
 
             {/* Another Shopee Voucher Card */}
             <div className="bg-white rounded-lg p-4 shadow-sm text-center border">
-              <img src="" alt="Shopee" className="mx-auto mb-4 w-20" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1200px-Shopee.svg.png"
+                alt="Shopee"
+                className="mx-auto mb-4 w-20"
+              />
               <p className="text-xs font-medium">Shopee Voucher 10k</p>
               <button
                 className="mt-2 px-3 py-1 border border-green-600 text-green-600 rounded-full text-xs flex items-center justify-center gap-1 mx-auto"
