@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import QrReader from 'react-qr-scanner';
-import Navbar from './Navbar';
+import { useState } from "react";
+import QrReader from "react-qr-scanner";
+import Navbar from "./Navbar";
 
 const CameraComponent = () => {
-  const [result, setResult] = useState('No result');
+  const [result, setResult] = useState("No result");
   const [delay] = useState(100); // Set delay to 100ms
 
   const handleScan = (data) => {
@@ -23,23 +23,28 @@ const CameraComponent = () => {
 
   return (
     <>
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 bg-[#f1f7ec]">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-        <h1 className="text-2xl font-semibold text-center mb-4">QR Code Scanner</h1>
-        
-        <QrReader
-          delay={delay}
-          style={previewStyle}
-          onError={handleError}
-          onScan={handleScan}
-        />
+      <div className="flex justify-center items-center min-h-screen bg-gray-100 bg-[#f1f7ec]">
+        <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+          <h1 className="text-2xl font-semibold text-center mb-4">
+            QR Code Scanner
+          </h1>
 
-        <div className="mt-4 text-center">
-          <p className="text-lg">{result}</p>
+          <QrReader
+            delay={delay}
+            style={previewStyle}
+            onError={handleError}
+            onScan={handleScan}
+            constraints={{
+              video: { facingMode: "environment" },
+            }}
+          />
+
+          <div className="mt-4 text-center">
+            <p className="text-lg">{result}</p>
+          </div>
         </div>
       </div>
-    </div>
-    <Navbar />
+      <Navbar />
     </>
   );
 };
