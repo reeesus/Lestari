@@ -26,7 +26,7 @@ const Home = () => {
               {/* Image */}
               <div className="w-14 h-14 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center shadow-md shadow-gray-700">
                 <img
-                  src="src\assets\profile.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg/330px-BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg"
                   alt=""
                   className="w-14 h-14 rounded-full object-cover"
                 />
