@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 const Navbar = () => {
   const Menus = useMemo(
     () => [
-      { icon: "home-outline", path: "/" },
+      { icon: "home-outline", path: "/home" },
       { icon: "trash-outline", path: "/camera" },
       { icon: "gift-outline", path: "/gifts" },
       { icon: "person-outline", path: "/profile" },

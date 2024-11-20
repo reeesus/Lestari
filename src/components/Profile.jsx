@@ -76,7 +76,7 @@ const Profile = () => {
           </div>
           <div className="size-32 bg-gray-300 rounded-full mb-3 overflow-hidden border-2 border-[#F7FBEA] ring-8 ring-[#F7FBEA] outline outline-[#5E8532] outline-2 shadow-lg drop-shadow-sm shadow-black">
             <img
-              src="public\assets\profile.png"
+              src="src\assets\profile.png"
               alt="Profile"
               className="object-cover w-full h-full"
             />
